@@ -3,9 +3,9 @@
 
 object Super_Duper_Easy extends App {
   def problem(a: String): String = {
-    a.toIntOption match {
-      case Some(i) => (i * 50 + 6).toString
-      case None => "Error"
+    a.toInt match {
+      case i => (i * 50 + 6).toString
+      case _ => "Error"
     }
   }
 }
